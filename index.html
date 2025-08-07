@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VIDEJUS - Víctimas de Denuncias Falsas</title>
+  <title>VIDEJUS - Víctimas de la Justicia</title>
+
   <style>
     body {
       margin: 0;
@@ -18,15 +19,25 @@
       background-position: center;
       color: white;
       text-align: center;
-      padding: 120px 20px;
+      padding: 20px 20px;
     }
 
     header h1 {
-      font-size: 3em;
-      background-color: rgba(0,0,0,0.6);
+      font-size: 8em;
+      background-color: rgba(0,0,0,0.5);
       display: inline-block;
       padding: 10px 20px;
       border-radius: 10px;
+      margin-bottom: 0;
+      line-height: 1.1;
+    }
+
+    .subtitulo {
+      display: block;
+      font-size: 1.4em;
+      margin-top: 0;
+      color: white;
+      line-height: 1.2;
     }
 
     main {
@@ -40,10 +51,10 @@
     main::before {
       content: "";
       background-image: url('justicia.jpg');
-      background-size: 70%;
+      background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
-      opacity: 0.1;
+      opacity: 0.8;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -53,7 +64,7 @@
     }
 
     section {
-      background-color: rgba(255,255,255,0.9);
+      background-color: rgba(255,255,255,0.7);
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 10px;
@@ -71,12 +82,13 @@
       font-size: 0.9em;
       color: #777;
     }
+
   </style>
 </head>
 <body>
   <header>
     <h1>VIDEJUS</h1>
-    <p>Víctimas de la Justicia</p>
+    <p class="subtitulo">Víctimas de la Justicia</p>	
   </header>
 
   <main>
