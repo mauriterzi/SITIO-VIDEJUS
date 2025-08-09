@@ -82,6 +82,29 @@
       font-size: 0.9em;
       color: #777;
     }
+@media (max-width: 768px) {
+  header {
+    padding: 60px 10px; /* menos alto en móviles */
+    background-size: cover;
+  }
+
+  header h1 {
+    font-size: 2em; /* título más chico */
+  }
+
+  header p {
+    font-size: 1.2em; /* subtítulo más chico */
+    margin-top: 5px;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+
+  main::before {
+    background-size: 100%; /* que la imagen de justicia se ajuste mejor */
+  }
+}
 
   </style>
 </head>
