@@ -189,3 +189,37 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* Botones generales */
+.btn-read,
+.btn-download {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Botón "Leer artículo" */
+.btn-read {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.btn-read:hover {
+  background-color: #1a252f;
+  transform: translateY(-2px);
+}
+
+/* Botón "Descargar PDF" */
+.btn-download {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.btn-download:hover {
+  background-color: #1e8449;
+  transform: translateY(-2px);
+}
