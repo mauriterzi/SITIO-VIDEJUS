@@ -167,6 +167,78 @@ footer {
   color: #777;
 }
 
+/* Botones generales */
+.btn-read,
+.btn-download {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-read {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.btn-read:hover {
+  background-color: #1a252f;
+  transform: translateY(-2px);
+}
+
+.btn-download {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.btn-download:hover {
+  background-color: #1e8449;
+  transform: translateY(-2px);
+}
+
+/* SECCIÓN TRIBUNALES DE ÉTICA */
+.informes {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.informes h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.informes h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.informes ul {
+  margin-left: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.informes p {
+  margin-bottom: 15px;
+}
+
+/* Íconos en encabezados */
+.informes h1::before {
+  content: "⚖️ ";
+}
+
+.informes h2::before {
+  content: "📌 ";
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   header {
@@ -188,38 +260,12 @@ footer {
   .articles-grid {
     grid-template-columns: 1fr;
   }
-}
-/* Botones generales */
-.btn-read,
-.btn-download {
-  display: inline-block;
-  padding: 10px 16px;
-  margin-top: 10px;
-  font-size: 0.95rem;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
 
-/* Botón "Leer artículo" */
-.btn-read {
-  background-color: #2c3e50;
-  color: #fff;
-}
+  .informes h1 {
+    font-size: 1.8rem;
+  }
 
-.btn-read:hover {
-  background-color: #1a252f;
-  transform: translateY(-2px);
-}
-
-/* Botón "Descargar PDF" */
-.btn-download {
-  background-color: #27ae60;
-  color: #fff;
-}
-
-.btn-download:hover {
-  background-color: #1e8449;
-  transform: translateY(-2px);
+  .informes h2 {
+    font-size: 1.3rem;
+  }
 }
